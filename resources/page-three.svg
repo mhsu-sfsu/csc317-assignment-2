@@ -1,0 +1,75 @@
+<!-- contains the svg in three.html; this svg contains an animation. -->
+
+<svg width="100%" height="300" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+        <!-- sky/background -->
+        <rect width="100%" height="100%" fill="#79e2fa"/> 
+
+        <!-- mountains -->
+        <linearGradient id="grad1" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#322f26" />
+            <stop offset="150%" stop-color="white" />
+        </linearGradient>
+
+        <linearGradient id="grad2" x1="0%" x2="0%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#757268" />
+            <stop offset="200%" stop-color="white" />
+        </linearGradient>
+
+
+        <polygon points="500, 270 650, 270 575, 125" style="fill:url(#grad2)"/>
+        <polygon points="600, 270 800, 270 700, 150" style="fill:url(#grad2)"/>
+        <polygon points="550, 270 650, 270 600, 75" style="fill:url(#grad1)"/>
+        <polygon points="650, 270 750, 270 600, 75" style="fill:url(#grad1)"/>
+
+        <polygon points="700, 270 950, 270 800, 125" style="fill:url(#grad2)"/>
+        <polygon points="900, 270 1000, 270 950, 150" style="fill:url(#grad2)"/>
+        <polygon points="850, 270 975, 270 915, 110" style="fill:url(#grad1)"/>
+        <polygon points="800, 270 950, 270 870, 75" style="fill:url(#grad1)"/>
+
+        <!-- grass, sun -->
+        <rect width="100%" height="10%" y="90%" fill="#66de8a"/>
+        <circle r="35" cx="10%" cy="20%" fill="#e7bf1d"/>
+
+        <!-- cloud -->
+        <circle r="30" cx="-100" cy="90" style="fill:white;">
+            <animateMotion
+                path="M0,0 1000,0"
+                begin="0s"
+                dur="15s"
+                repeatCount="indefinite"
+                />
+        </circle>
+        <circle r="25" cx="-65" cy="90" style="fill:white;">
+           <animateMotion
+                path="M0,0 1000,0"
+                begin="0s"
+                dur="15s"
+                repeatCount="indefinite"
+                />
+        </circle>
+        <circle r="25" cx="-130" cy="90" style="fill:white;">
+            <animateMotion
+                path="M0,0 1000,0"
+                begin="0s"
+                dur="15s"
+                repeatCount="indefinite"
+                />
+        </circle>
+        <circle r="18" cx="-110" cy="60" style="fill:white;">
+            <animateMotion
+                path="M0,0 1000,0"
+                begin="0s"
+                dur="15s"
+                repeatCount="indefinite"
+                />
+        </circle>
+        <circle r="25" cx="-80" cy="70" style="fill:white;">
+          <animateMotion
+                path="M0,0 1000,0"
+                begin="0s"
+                dur="15s"
+                repeatCount="indefinite"
+                />
+        </circle>
+    </svg>
