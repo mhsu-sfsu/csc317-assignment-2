@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.banner{
+    text-align:center;
+    background-color:#ffc5fa;
+    margin:auto;
+    display:block;
+}
+
+.indexbanner{
+    width:1000px;
+}
