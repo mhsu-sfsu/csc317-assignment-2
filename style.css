@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+ul{
+    line-height:150%;
+}
+
 h1{
     font-weight:bolder;
 }
