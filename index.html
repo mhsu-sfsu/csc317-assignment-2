@@ -3,32 +3,83 @@
     <head>
         <meta charset="utf-8">
         <title>assignment 2</title>
-        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="/resources/favicon.svg" type="image/svg+xml">
         <link rel="stylesheet" href="/style.css">
     </head>
-    <body style="margin:0;">
+    <body>
         <div class="banner">
-            <img class="indexbanner" src="/resources/index-banner.svg"/>
+            <img class="indexbanner" src="/resources/banner.svg"/>
         </div>
+            <div class="innercontainer">
+            <nav class="menue">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/views/two.html">link one</a></li>
+                    <li><a href="/views/three.html">link two</a></li>
+                </ul>
+            </nav>
+            <div class="pagecontent">
+                <h1>Assignment 2</h1><br>
+                <h2 class="css-question">How to Apply CSS to HTML</h2>
+                <p class="css-question">
+                    <p class="paracontent">In order to include an external CSS file in an html file, we have to link the two files together. In the head of the html file in question, we would include the following line: <br><br>
 
-        <nav class="menue">
-            <ul>
-                <li><a href="/index.html">home</a></li>
-                <li><a href="/views/two.html">link one</a></li>
-                <li><a href="views/three.html">link two</a></li>
-            </ul>
-        </nav>
-        <h1>Assignment 2</h1>
-        <h2 class="css-question">How to Apply CSS to HTML</h2>
-        <p class="css-question">
-            containing information on how to include an external CSS file in an html file with an example. This element follows the h2 element above.
-            Any code used in your answer is required to be enclosed within (code)(/code) or (pre)(/pre)
-        </p>
-        <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
-        <p class="js-question">
-            This paragraph element contains the following information:
-            How to link to an external JavaScript file with an example.
-            How to write JavaScript code within an html file with an example. also needs to use code or pre tags if there is any code discussed.
-        </p>
+                    <code class="highlightLine"> &lt;link rel="stylesheet" href="/style.css"&gt;</code>
+                    
+                    <br><br>Note that the keyword link here is not the same as creating a link to another page as we want the CSS to be applied to this page rather than being redirected to the CSS file.<br>The <code>rel</code> attribute used here is what lets us link the two files and the <code>href</code> attribute specifies where the file we are linking (in this case, the CSS file) is in relation to the html file.<br>
+                    </p>
+                    <br>
+                    <p class="paracontent">The resulting html file should look something like this: <br><br>
+                        <div class="codeblock">
+                            <code class="codeblock">
+                                <p class="code">&lt;html&gt;</p>
+                                        <p class="codeindent code">&lt;head&gt;</p>
+                                        <p class="codeindent code"><code class="highlightLine codeindent">&lt;link rel="stylesheet" href="/style.css"&gt;</code></p>
+                                        <p class="codeindent code">&lt;&bsol;head&gt;</p>
+
+                                        <p class="codeindent code">&lt;body&gt;</p>
+                                        <p class="codeindent code">&lt;&bsol;body&gt;</p>
+                                <p class="code">&lt;&bsol;html&gt;</p>
+                            </code>
+                        </div>
+                        <br>
+                        Any styling done to this file can now be done in the CSS file, creating a cleaner and easier coding experience!
+                    </p>
+                </p>
+                
+                <br><br>
+                <h2 class="js-question paracontent">How to Use JavaScript in a Webpage</h2><br>
+                <p class="js-question paracontent">
+                    Linking a JavaScript file to an html file is very similar to linking a CSS file. The main difference is that instead of using the attribute <code>link</code>,  we instead use the <code>script</code> tag. This tag specifically allows us to embed the script into the html file. The line to include would look like this:<br><br>
+                    
+                    <code class="highlightLine"> &lt;script src="myscripts.js"&gt;&lt;/script&gt;</code><br><br>
+
+                    Similarly to the linking of a CSS file, we include the file path relative to the html file we want to link to. Instead of using <code>href</code> we instead use <code>src</code>, which stands for source. This line can be placed in multiple areas, but should generally be placed before it is being used.<br><br>
+                </p>
+                <p class="paracontent">The html file including both external CSS and JavaScript files should look something like this: <br><br>
+                    <div class="codeblock">
+                        <code class="codeblock">
+                            <p class="code">&lt;html&gt;</p>
+                                    <p class="codeindent code">&lt;head&gt;</p>
+                                    <p class="codeindent code"><code class="highlightLine codeindent">&lt;link rel="stylesheet" href="/style.css"&gt;</code></p>
+                                    <p class="codeindent code">&lt;&bsol;head&gt;</p>
+
+                                    <p class="codeindent code">&lt;body&gt;</p>
+                                    <p class="codeindent code"><code class="highlightLine codeindent">&lt;script src="myscripts.js"&gt;&lt;/script&gt;</code></p>
+                                    <p class="codeindent code">&lt;&bsol;body&gt;</p>
+                            <p class="code">&lt;&bsol;html&gt;</p>
+                        </code>
+                    </div>
+                    <br>
+                    JavaScript can now be referenced in this html file from an external source!
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footertext">
+            Made with love and silliness <3
+            </div>
+        </div>
     </body>
 </html>

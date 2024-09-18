@@ -1,32 +1,55 @@
 <!DOCTYPE html>
  <html lang="en">
     <head>
-        <title>table page idk</title>
+        <title>Page Two</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="/resources/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <h1>Favorite Coding Resources</h1>
-        <table>
-            <caption>table title etc</caption>
-            <thead>
-                <tr>
-                    <th scope="col">Coding Resource</th>
-                    <th scope="col">Resource Link</th>
-                </tr>   
-            </thead>
-            <tbody>
-                <tr>
-                    <td>one</td>
-                    <td><a href="/index.html">link one</td>
-                </tr>
-                <tr>
-                    <td>two</td>
-                    <td><a href="/index.html">link two</td>
-                </tr>
-                <tr>
-                    <td>three</td>
-                    <td><a href="/index.html">link three</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="banner">
+            <img class="indexbanner" src="/resources/banner.svg"/>
+        </div>
+        <div class="innercontainer">
+            <nav class="menue">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/views/two.html">link one</a></li>
+                    <li><a href="/views/three.html">link two</a></li>
+                </ul>
+            </nav>
+            <div class="pagecontent">
+                <h1>Favorite Coding Resources</h1>
+                <table>
+                    <caption>Table of Resources with Links</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Coding Resource</th>
+                            <th scope="col">Resource Link</th>
+                        </tr>   
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>W3Schools</td>
+                            <td><a href="https://www.w3schools.com/">https://www.w3schools.com/</td>
+                        </tr>
+                        <tr>
+                            <td>Women Who Code</td>
+                            <td><a href="https://www.womenwhocode.com/">https://www.womenwhocode.com/</td>
+                        </tr>
+                        <tr>
+                            <td>The Odin Project</td>
+                            <td><a href="https://www.theodinproject.com/">https://www.theodinproject.com/</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footertext">
+            made with love and silliness <3
+            </div>
+        </div>
     </body>
 </html>
