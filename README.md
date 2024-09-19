@@ -7,3 +7,5 @@ Resources used when working on this assignment:
 [CSS Building Blocks - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
 
 [HTML Color Codes](https://htmlcolorcodes.com/)
+
+[Window alert()](https://www.w3schools.com/jsref/met_win_alert.asp)
