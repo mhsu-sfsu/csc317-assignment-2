@@ -8,4 +8,4 @@ Resources used when working on this assignment:
 
 [HTML Color Codes](https://htmlcolorcodes.com/)
 
-[Window alert()](https://www.w3schools.com/jsref/met_win_alert.asp)
+[JavaScript - Window alert()](https://www.w3schools.com/jsref/met_win_alert.asp)
