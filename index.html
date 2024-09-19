@@ -51,6 +51,8 @@
                 <br><br>
                 <h2 class="js-question paracontent">How to Use JavaScript in a Webpage</h2><br>
                 <p class="js-question paracontent">
+                    When using JavaScript in a webpage, the more common method is to link an external file similar to the CSS file. Another method that can very helpful in some instances is using JavaScript directly in the HTML file; however, it is important to note that both are used in different ways and have their strengths and weaknesses. 
+                    <br> 
                     Linking a JavaScript file to an html file is very similar to linking a CSS file. The main difference is that instead of using the attribute <code>link</code>,  we instead use the <code>script</code> tag. This tag specifically allows us to embed the script into the html file. The line to include would look like this:<br><br>
                     
                     <code class="highlightLine"> &lt;script src="myscripts.js"&gt;&lt;/script&gt;</code><br><br>
@@ -64,7 +66,6 @@
                                     <p class="codeindent code">&lt;head&gt;</p>
                                     <p class="codeindent code"><code class="highlightLine codeindent">&lt;link rel="stylesheet" href="/style.css"&gt;</code></p>
                                     <p class="codeindent code">&lt;&bsol;head&gt;</p>
-
                                     <p class="codeindent code">&lt;body&gt;</p>
                                     <p class="codeindent code"><code class="highlightLine codeindent">&lt;script src="myscripts.js"&gt;&lt;/script&gt;</code></p>
                                     <p class="codeindent code">&lt;&bsol;body&gt;</p>
@@ -73,12 +74,39 @@
                     </div>
                     <br>
                     JavaScript can now be referenced in this html file from an external source!
+                    <br><br>
+                    If you would rather try another option, it is possible to write JavaScript directly into your html file as well. In order to do so, the <code>script</code> tag is used again. Similarly to linking a file, there will be both two tags. However, there won't be a source asigned to the script because the code will instead be directly in the HTML file. In between the starting and ending tab, any JavaScript can be added at this point. <br> 
+                    <br>
+
+                    An example of a simple JavaScript line is the following, which prints the words "hello world!" to the page. <br>
+                    <br><code class="highlightLine">document.write("hello world!");</code><br><br>
+
+                    If it would be prefered to have this line in the HTML file, then this would be inserted in the space where the script would be used: <br> <br>
+
+                    <div class="codeblock">
+                        <code class="codeblock">
+                            <p class="code">&lt;html&gt;</p>
+                                    <p class="codeindent code">&lt;head&gt;</p>
+                                    <p class="codeindent code">&lt;&bsol;head&gt;</p>
+
+                                    <p class="codeindent code">&lt;body&gt;</p>
+                                        <div class="codeindent code">
+                                            <p class="highlightLine codeindent code">&lt;script&gt;</p>
+                                                <p class="codeindent code"><code class="highlightLine codeindent">document.write("hello world!");</code></p>
+                                            <p class=" highlightLine codeindent code">&lt;script&gt;</p>
+                                        </div>
+                                    <p class="codeindent code">&lt;&bsol;body&gt;</p>
+                            <p class="code">&lt;&bsol;html&gt;</p>
+                        </code>
+                    </div>
+                    <br><br>
+                    <p> While there can be advantages to using JavaScript directly inside an HTML file, one of the biggest reasons why this is not the standard is because it creates code that is hard to work with and debug. By using separate files, one is able to easily pinpoint and navigate to areas that may have errors rather than having to look through one larger unorganized file. This is not to say that using it in this way is always a negative, but one should be aware and make decisions about it depending on the situation.</p>
                 </p>
             </div>
         </div>
         <div class="footer">
             <div class="footertext">
-            Made with love and silliness <3
+            Made with love and silliness &lt;3
             </div>
         </div>
     </body>
