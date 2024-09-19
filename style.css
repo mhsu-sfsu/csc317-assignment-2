@@ -143,6 +143,7 @@ caption{
 }
 
 table{
+    border-collapse: collapse;
     border-radius: 3px;
     border-style: solid;
     border-spacing: 4px;
@@ -155,7 +156,7 @@ table{
 
 th{
     font-size:large;
-    padding-right: 3%;
+    padding: 1%;
 }
 
 .animationsvg{
@@ -166,4 +167,14 @@ th{
 .icon{
     fill: rgb(255, 205, 205);
     background-color:white;
+}
+
+
+tr{
+    border-bottom: 1px solid #ddd;
+    padding: 1%;
+}
+
+td{
+    padding-left:1%;
 }
