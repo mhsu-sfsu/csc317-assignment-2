@@ -75,6 +75,7 @@ body{
     background-color:#79e2fa;
     margin:0;
     display:block;
+    overflow-y: hidden;
 }
 
 .indexbanner{
