@@ -80,6 +80,7 @@ body{
 
 .indexbanner{
     width:1000px;
+    overflow-y: hidden;
 }
 
 .innercontainer{
